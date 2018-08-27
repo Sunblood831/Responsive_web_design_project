@@ -1,0 +1,130 @@
+body {
+    font-family: 'Century Gothic';
+    padding: 0;
+    margin: 0;
+    display: row;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin: 5%; 
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 0%; 
+    height: 100%;
+}
+/*TITLE*/
+
+.logo {
+    position: relative; 
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-top: -17%;
+    left: 20.5%;
+    animation: loading2 1.9s ease-out;
+    z-index: 4;
+}
+@keyframes loading2 {
+    0% {
+        left: 50%;
+        opacity: 0;
+    }
+    50% {
+        left: 50%;
+        opacity: 0;
+    }
+    51% {opacity: 1;}
+    100% {left: 20.5%;}
+}
+
+/*IMAGES*/
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: auto;
+}
+#wave1 {
+    display: inline-flex;
+    justify-self: center;
+    align-self: center;
+    float: left;
+    width: 55%;
+    margin: 0;    
+    transform: rotate(180deg);
+    z-index: 2;
+    animation: loading 1s;
+}
+@keyframes loading {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+#wave2 {
+    display: none;
+}
+
+/*NAV*/
+
+nav {
+    display: flex;
+    width: 50%;
+    padding-top: 1%;
+    animation: loading3 3s ease-in;
+}
+@keyframes loading3 {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+}
+li {
+    display: inline-flex;
+}
+ 
+a {
+    color: black;
+    font-size: 100%;
+    list-style: none;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(139, 102, 6);
+}
+/*FOOTER*/
+
+footer {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 100%;
+}
+span {
+    display: none;
+    align-self: center;
+}
